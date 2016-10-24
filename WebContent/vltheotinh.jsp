@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Home</title>
+  <title>việc làm theo tỉnh</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -72,6 +72,17 @@ background-color: #f2f2f2;
   border-right:#f2f2f2;
   border-left:#f2f2f2;
 }
+.row h4	{
+
+ border-style:outset;
+ border-bottom-color:#b3b3ff;
+ border-top-color:#f2f2f2;
+  border-right:#f2f2f2;
+  border-left:#f2f2f2;
+}
+.pre-scrollable{
+text-align: left;
+}
   </style>
 </head>
 <body>
@@ -95,9 +106,9 @@ background-color: #f2f2f2;
       
       </div></li>
         <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Hotline : (08)986463287</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
+        <li><a href="index1.jsp"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
        <li><a href="#"><span class="glyphicon glyphicon-search"></span> Nhà tuyển dụng</a></li>
-       <li><a href="vltheotinh.jsp"><span class="glyphicon glyphicon-map-marker"></span> Việc làm theo tỉnh</a></li>
+       <li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> Việc làm theo tỉnh</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Đăng ký</a></li>
@@ -204,45 +215,32 @@ background-color: #f2f2f2;
      </div>
     </div>
   <div class="row">
-  <h3>Việc làm mới <span class = "Success Label"></span></h3>
+  <h3>Việc làm theo tỉnh <span class = "Success Label"></span></h3>
     <div class="col-sm-5">
     
       <div id="home" class="tab-pane fade in active">
   <div class="pre-scrollable">
- <% for(int i=0;i<20;i++){ %>
-     <div class="col-sm-5">
-   <div class="col-xs-2">
-      <img src="images/FPT.png" class="img-rounded" alt="Cinque Terre" width="50" height="40">
-    </div>
-    <div class="col-xs-9" >
-    <a href="http://www.w3schools.com">06 Senior PHP Developers- Salary Up To <%=1400*(i+1) %>usd</a>
+ <h4><span class="glyphicon glyphicon-map-marker"></span> <a href="#">Tp.Hồ Chí Minh <span class="badge">17</span></a></h4><br>
+    <h4><span class="glyphicon glyphicon-map-marker"></span> <a href="#">Hà Nội <span class="badge">94</span></a></h4><br>
+     <h4><span class="glyphicon glyphicon-map-marker"></span> <a href="#">Đà Nẵng <span class="badge">27</span></a></h4><br>
+      <h4><span class="glyphicon glyphicon-map-marker"></span> <a href="#">Hải Phòng <span class="badge">125</span></a></h4><br>
+   <h4><span class="glyphicon glyphicon-map-marker"></span> <a href="#">Cần Thơ <span class="badge">44</span></a></h4><br>
+     <h4><span class="glyphicon glyphicon-map-marker"></span> <a href="#">Tp. Huế <span class="badge">33</span></a></h4><br>
    
-    </div>
-      <div class="col-xs-1" >
-        <p>Urgent! </p>
-    </div>
-     </div>
-    <% } %>
      </div>
     </div>
     </div>
     <div class="col-sm-5">
      <div id="home" class="tab-pane fade in active">
   <div class="pre-scrollable">
- <% for(int i=0;i<5;i++){ %>
-     <div class="col-sm-5">
-   <div class="col-xs-2">
-      <img src="images/hot.png" class="img-rounded" alt="Cinque Terre" width="50" height="40">
-    </div>
-    <div class="col-xs-9" >
-    <a href="http://www.w3schools.com">Chăm Sóc Khách Hàng BIDV</a>
-   
-    </div>
-      <div class="col-xs-1" >
-        <p>Urgent! </p>
-    </div>
-     </div>
-    <% } %>
+   <h4><span class="glyphicon glyphicon-star"></span> <a href="#">Tây Bắc Bộ <span class="badge">25</span></a></h4><br>
+    <h4><span class="glyphicon glyphicon-star"></span> <a href="#">Đông Bắc Bộ <span class="badge">63</span></a></h4><br>
+     <h4><span class="glyphicon glyphicon-star"></span> <a href="#">Đồng bằng sông Hồng <span class="badge">65</span></a></h4><br>
+      <h4><span class="glyphicon glyphicon-star"></span> <a href="#">Bắc Trung Bộ <span class="badge">23</span></a></h4><br>
+   <h4><span class="glyphicon glyphicon-star"></span> <a href="#">Nam Trung Bộ <span class="badge">125</span></a></h4><br>
+     <h4><span class="glyphicon glyphicon-star"></span> <a href="#">Tây Nguyên <span class="badge">89</span></a></h4><br>
+     <h4><span class="glyphicon glyphicon-star"></span> <a href="#">Đông Nam Bộ <span class="badge">89</span></a></h4><br>
+    <h4><span class="glyphicon glyphicon-star"></span> <a href="#">Đồng bằng sông Cửu Long <span class="badge">89</span></a></h4><br>
      </div>
     </div>
     </div>
