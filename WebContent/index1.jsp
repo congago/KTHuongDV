@@ -5,9 +5,10 @@
   <title>Home</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
@@ -40,7 +41,7 @@
 }
 .carousel-inner{
   width:100%;
-  max-height: 300px !important;
+  max-height: 400px !important;
 }
 .container text-center { background-color: #FF4455; }
 .container text-center:hover { background-color: #000000; }
@@ -55,10 +56,13 @@ border-radius: 10;
 }
 
 .onimages { 
-   position: absolute; 
-   top: 200px; 
+
+   position: relative; 
+   margin: 5px;
+   padding: 15px;
    left: 0; 
-   width: 100%; 
+   width: 100%;
+    
 }
 .row{
 background-color: #f2f2f2;
@@ -66,7 +70,7 @@ background-color: #f2f2f2;
 }
 .row h3	{
 
- border-style:dotted;
+ border-style:solid	;
  border-bottom-color:#b3b3ff;
  border-top-color:#f2f2f2;
   border-right:#f2f2f2;
@@ -95,9 +99,9 @@ background-color: #f2f2f2;
       
       </div></li>
         <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Hotline : (08)986463287</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
+        <li><a href="index1.jsp"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
        <li><a href="#"><span class="glyphicon glyphicon-search"></span> Nhà tuyển dụng</a></li>
-       <li><a href="vltheotinh.jsp"><span class="glyphicon glyphicon-map-marker"></span> Việc làm theo tỉnh</a></li>
+       <li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> Việc làm theo tỉnh</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Đăng ký</a></li>
@@ -117,18 +121,18 @@ background-color: #f2f2f2;
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="images/7.jpg" alt="Image">
+        <img src="images/1.jpg" alt="Image">
         <div class="carousel-caption">
-          <h3>Sell $</h3>
+          <h3>Get a Job $</h3>
           <p>Money Money.</p>
         </div>
       </div>
 
       <div class="item">
-        <img src="images/9.jpg" alt="Image">
+        <img src="images/2.jpg" alt="Image">
         <div class="carousel-caption">
-          <h3>More Sell $</h3>
-          <p>Lorem ipsum...</p>
+          <h3>More Job</h3>
+          
         </div>
       </div>
     </div>
@@ -190,35 +194,34 @@ background-color: #f2f2f2;
    </div>
   
     </div>
-     <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="container">
    <div class="test">
       <ul class="nav navbar-nav">
-        <li><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Xây dựng</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Kinh doanh</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Bán hàng</a></li>
-       <li><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Lao động phổ thông</a></li>
-       <li><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Tài chính/kế toán</a></li>
-       <li><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Công nghệ thông tin</a></li>
-       <li><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Xem các ngành nghề khác</a></li>
+        <li class="list-group-item list-group-item-success"><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Xây dựng</a></li>
+        <li class="list-group-item list-group-item-success"><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Kinh doanh</a></li>
+        <li class="list-group-item list-group-item-success"><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Bán hàng</a></li>
+       <li class="list-group-item list-group-item-success"><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Lao động phổ thông</a></li>
+       <li class="list-group-item list-group-item-success"><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Tài chính/kế toán</a></li>
+       <li class="list-group-item list-group-item-success"><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Xem các ngành nghề khác</a></li>
       </ul>
      </div>
     </div>
   <div class="row">
   <h3>Việc làm mới <span class = "Success Label"></span></h3>
-    <div class="col-sm-5">
+    <div class="col-sm-6">
     
       <div id="home" class="tab-pane fade in active">
   <div class="pre-scrollable">
  <% for(int i=0;i<20;i++){ %>
      <div class="col-sm-5">
-   <div class="col-xs-2">
+   <div class="col-xs-5">
       <img src="images/FPT.png" class="img-rounded" alt="Cinque Terre" width="50" height="40">
     </div>
-    <div class="col-xs-9" >
+    <div class="col-xs-5" >
     <a href="http://www.w3schools.com">06 Senior PHP Developers- Salary Up To <%=1400*(i+1) %>usd</a>
    
     </div>
-      <div class="col-xs-1" >
+      <div class="col-xs-2" >
         <p>Urgent! </p>
     </div>
      </div>
@@ -226,32 +229,27 @@ background-color: #f2f2f2;
      </div>
     </div>
     </div>
-    <div class="col-sm-5">
+    <div class="col-sm-6">
      <div id="home" class="tab-pane fade in active">
   <div class="pre-scrollable">
- <% for(int i=0;i<5;i++){ %>
+  <% for(int i=0;i<20;i++){ %>
      <div class="col-sm-5">
-   <div class="col-xs-2">
-      <img src="images/hot.png" class="img-rounded" alt="Cinque Terre" width="50" height="40">
+   <div class="col-xs-5">
+      <p>Công việc Hot</p>
     </div>
-    <div class="col-xs-9" >
+    <div class="col-xs-5" >
     <a href="http://www.w3schools.com">Chăm Sóc Khách Hàng BIDV</a>
    
     </div>
-      <div class="col-xs-1" >
-        <p>Urgent! </p>
+      <div class="col-xs-2" >
+        <img src="images/hot1.png" class="img-rounded" alt="Cinque Terre" width="50" height="40">
     </div>
      </div>
-    <% } %>
+  <%} %>
      </div>
     </div>
     </div>
-    <div class="col-sm-2">
-      <h2>Nhà tuyển dụng <span class = "Success Label"></span></h2>
-      <img src="images/canon.png" class="img-responsive" style="width:100%" alt="Image">
-      <img src="images/eva.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <img src="images/FPT.png" class="img-responsive" style="width:100%" alt="Image">
-    </div>
+   
   </div>
 </div><br>
 
