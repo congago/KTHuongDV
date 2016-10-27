@@ -6,9 +6,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/datepicker.css">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
- 
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+ <script type="text/javascript">
+ $(function(){
+	   $('.datepicker').datepicker({
+	      format: 'mm-dd-yyyy'
+	    });
+	});
+        </script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
@@ -68,13 +76,19 @@ border-radius: 10;
 background-color: #f2f2f2;
 
 }
-.row h3	{
-
- border-style:solid	;
- border-bottom-color:#b3b3ff;
- border-top-color:#f2f2f2;
-  border-right:#f2f2f2;
-  border-left:#f2f2f2;
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 18px 0;
+}
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
 }
   </style>
 </head>
@@ -149,33 +163,73 @@ background-color: #f2f2f2;
 </div>
   
 <div class="container text-center">
-<div class="onimages">
-  <div class="col-sm-2">
+<div class="" align="left">
+   <hr>
+   <h3>Tạo hồ sơ</h3>
   </div>
-  <div class="col-sm-1">
-   <a href="#" role="button" class="btn btn-primary active navb-right">Tìm việc</a>
+  <div class="taohoso" align="left">
+   <div class="col-sm-3">
+   <img src="images/FPT.png" class="img-rounded" alt="Cinque Terre" width="304" height="236">
   </div>
-   <div class="col-sm-2">
+  <div class ="row">
+  <div class="col-sm-6">
+  <table class='table table-borderless'>
+   
+    <tbody>
+      <tr>
+        <td>Họ Tên :</td>
+        <td>Nguyễn Văn A</td>
+      </tr>
+      <tr>
+        <td>Số điện thoại :</td>
+        <td> 01447534555</td>
+      </tr>
+      <tr>
+        <td>Email :</td>
+        <td>timviec@gmail.com</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  </div>
+  <div class="col-sm-3">
  
-    <input class="form-control" placeholder="chức danh, vị trí, kỹ năng" id="inputdefault" type="text">
    </div>
-   <div class="col-sm-2">
-   <div class="form-group">
-         <select class="form-control" id="exampleSelect2">
-         <option>Chọn ngành nghề</option>
-         <option>Tất cả</option>
-           <option>Hà nội</option>
-           <option>IT_phần mềm</option>
-           <option>IT_phần cứng</option>
-           <option>Marketing</option>
-           <option>Cơ khí</option>
-           <option>Xây dựng</option>
+  </div>
+  </div>
+  <div class ="row">
+  <div class="thongtincanhan">
+  
+  <hr>
+       <div class="taohoso" align="left">
+   <div class="col-sm-3">
+  <h4>Thông tin cá nhân</h4>
+  </div><div class="col-sm-6">
+  <table class='table table-borderless'>
+   
+    <tbody>
+      <tr>
+        <td>Ngày sinh :</td>
+        <td>
+<input type="text" id="dp1" class="span2 datepicker" placeholder="Date..."  
+           name="date"> <br>
+        </td>
+      </tr>
+       <tr>
+        <td>Giới tính :</td>
+        <td>
+           <div class="form-group">
+         <select class="form-control" id="exampleSelect2" >
+          <option>Nam</option>
+           <option>Nữ</option>
+           <option>Khác</option>
         </select>
        </div>
-   </div>
-   <div class="col-sm-2">
-    <div class="form-group">
-         <select name="city" id="city" class="form-control">
+       </td>
+      </tr>
+      <tr>
+        <td>Tỉnh/Thành phố :</td>
+        <td> <select name="city" id="city" class="form-control">
                                             <option value="">Tỉnh/Thành phố</option>
                                             <option value="1">TP Hà Nội</option>
                                             <option value="2">TP Hồ Chí Minh</option>
@@ -241,72 +295,113 @@ background-color: #f2f2f2;
                                             <option value="62">Vĩnh Long</option>
                                             <option value="63">Vĩnh Phúc</option>
                                             <option value="64">Yên Bái</option>
-                                        </select>
-       </div>
-   
-   </div>
+                                        </select></td>
+      </tr>
+       <tr>
+        <td>Địa chỉ :</td>
+        <td>  <input class="form-control" placeholder="địa chỉ cụ thể" id="inputdefault" type="text"></td>
+      </tr>
      
-   <div class="col-sm-1">
+    </tbody>
+  </table>
   
-     <a href="#" role="button" class="btn btn-primary active navb-right"><span class="glyphicon glyphicon-search"></span></a>
+  </div>
+  <div class="col-sm-3">
+   
    </div>
+   </div>
+  </div> 
+  </div>
+  <div class ="row">
+  <div class="thongtincanhan">
   
-    </div>
-      <div class="container">
-   <div class="test">
-      <ul class="nav navbar-nav">
-        <li class="list-group-item list-group-item-success"><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Xây dựng</a></li>
-        <li class="list-group-item list-group-item-success"><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Kinh doanh</a></li>
-        <li class="list-group-item list-group-item-success"><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Bán hàng</a></li>
-       <li class="list-group-item list-group-item-success"><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Lao động phổ thông</a></li>
-       <li class="list-group-item list-group-item-success"><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Tài chính/kế toán</a></li>
-       <li class="list-group-item list-group-item-success"><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Xem các ngành nghề khác</a></li>
-      </ul>
-     </div>
-    </div>
-  <div class="row">
-  <h3>Việc làm mới <span class = "Success Label"></span></h3>
-    <div class="col-sm-6">
-    
-      <div id="home" class="tab-pane fade in active">
-  <div class="pre-scrollable">
- <% for(int i=0;i<20;i++){ %>
-     <div class="col-sm-5">
-   <div class="col-xs-5">
-      <img src="images/FPT.png" class="img-rounded" alt="Cinque Terre" width="50" height="40">
-    </div>
-    <div class="col-xs-5" >
-    <a href="http://www.w3schools.com">06 Senior PHP Developers- Salary Up To <%=1400*(i+1) %>usd</a>
+  <hr>
+       <div class="taohoso" align="left">
+   <div class="col-sm-3">
+  <h4>Thông tin chung :</h4>
+  </div><div class="col-sm-6">
+  <table class='table table-borderless'>
    
-    </div>
-      <div class="col-xs-2" >
-        <p>Urgent! </p>
-    </div>
-     </div>
-    <% } %>
-     </div>
-    </div>
-    </div>
-    <div class="col-sm-6">
-     <div id="home" class="tab-pane fade in active">
-  <div class="pre-scrollable">
-  <% for(int i=0;i<20;i++){ %>
-     <div class="col-sm-5">
-   <div class="col-xs-5">
-      <p>Công việc Hot</p>
-    </div>
-    <div class="col-xs-5" >
-    <a href="http://www.w3schools.com">Chăm Sóc Khách Hàng BIDV</a>
+    <tbody>
+      <tr>
+        <td>Trình độ :</td>
+        <td>
+          <select class="form-control" id="exampleSelect2">
+         <option>Đại học</option>
+           <option>Cao Đẳng</option>
+           <option>Trung cấp</option>
+           <option>THPT</option>
+        </select>
+        </td>
+      </tr>
+       <tr>
+        <td>Kinh nghiệm :</td>
+        <td>
+          <select class="form-control" id="exampleSelect2">
+         <option>1 năm</option>
+           <option>2 năm</option>
+           <option>3 năm</option>
+           <option>5 năm</option>
+        </select>
+       </td>
+      </tr>
+      <tr>
+        <td>Chức vụ mong muốn :</td>
+        <td> 
+        <select class="form-control" id="exampleSelect2">
+         <option>Nhân viên</option>
+         <option>Trưởng phòng</option>
+           <option>Trưởng nhóm</option>
+        </select>
+        </td>
+      </tr>
+       <tr>
+        <td>Ngành nghề :</td>
+        <td> 
+        <select class="form-control" id="exampleSelect2">
+         <option>Công nghệ thông tin</option>
+         <option>Marketing</option>
+           <option>Xây dựng</option>
+           <option>Cơ khí</option>
+        </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Mức lương mong muốn :</td>
+        <td> 
+        <select class="form-control" id="exampleSelect2">
+         <option>dưới 5 Triệu</option>
+         <option>Từ 5 Triệu -> 8 Triệu</option>
+           <option>Từ 8 Triệu -> 11 Triệu</option>
+           <option>Từ 11 Triệu -> 15 Triệu</option>
+           <option>Trên 15 Triệu</option>
+        </select>
+        </td>
+      </tr>
+       <tr>
+        <td>Nơi làm việc mong muốn :</td>
+        <td> 
+        <select class="form-control" id="exampleSelect2">
+         <option>Hà Nội</option>
+         <option>Tp.HCM</option>
+           <option>Đà Nẵng</option>
+           <option>Hải Phòng</option>
+           <option>Cần Thơ</option>
+        </select>
+        </td>
+      </tr>
+      <tr>
+      <td><a href="#" role="button" class="btn btn-primary active navb-right">Lưu</a></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  </div>
+  <div class="col-sm-3">
    
-    </div>
-      <div class="col-xs-2" >
-        <img src="images/hot1.png" class="img-rounded" alt="Cinque Terre" width="50" height="40">
-    </div>
-     </div>
-  <%} %>
-     </div>
-    </div>
-    </div>
+   </div>
+   </div>
+  </div>
    
   </div>
 </div><br>

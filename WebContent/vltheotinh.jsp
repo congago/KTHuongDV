@@ -208,7 +208,7 @@ background-color: #f2f2f2;
     </div>
   <div class="row">
   <h3>Việc làm theo tỉnh <span class = "Success Label"></span></h3>
-    <div class="col-sm-5">
+    <div class="col-sm-6">
     
       <div id="home" class="tab-pane fade in active">
   <div class="pre-scrollable">
@@ -222,7 +222,7 @@ background-color: #f2f2f2;
      </div>
     </div>
     </div>
-    <div class="col-sm-5">
+    <div class="col-sm-6">
      <div id="home" class="tab-pane fade in active">
   <div class="pre-scrollable">
    <h4><span class="glyphicon glyphicon-star"></span> <a href="#">Tây Bắc Bộ <span class="badge">25</span></a></h4><br>
@@ -236,12 +236,7 @@ background-color: #f2f2f2;
      </div>
     </div>
     </div>
-    <div class="col-sm-2">
-      <h2>Nhà tuyển dụng <span class = "Success Label"></span></h2>
-      <img src="images/canon.png" class="img-responsive" style="width:100%" alt="Image">
-      <img src="images/eva.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <img src="images/FPT.png" class="img-responsive" style="width:100%" alt="Image">
-    </div>
+    
   </div>
 </div><br>
 
