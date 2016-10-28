@@ -169,7 +169,7 @@ hr {
   </div>
   <div class="taohoso" align="left">
    <div class="col-sm-3">
-   <img src="images/FPT.png" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+   <img src="images/nesson.jpg" class="img-rounded" alt="Cinque Terre" width="200" height="236">
   </div>
   <div class ="row">
   <div class="col-sm-6">
