@@ -6,17 +6,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/datepicker.css">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
-<script type="text/javascript">
-  $(function(){
-	   $('.datepicker').datepicker({
-	      format: 'mm-dd-yyyy'
-	    });
-	});
-        </script>
+ 
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
@@ -130,6 +122,39 @@ background-color: #f2f2f2;
 			</div>
 		</div>
 	</nav>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+		</ol>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="images/2.jpg" alt="Image">
+				<div class="carousel-caption">
+					<h3>Get a Job $</h3>
+					<p>Money Money.</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/3.jpg" alt="Image">
+				<div class="carousel-caption">
+					<h3>More Job</h3>
+
+				</div>
+			</div>
+		</div>
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" role="button"
+			data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
+			aria-hidden="true"></span> <span class="sr-only">Previous</span>
+		</a> <a class="right carousel-control" href="#myCarousel" role="button"
+			data-slide="next"> <span
+			class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
 	<div class="container text-center">
 		<div class="onimages">
 			<div class="col-sm-2"></div>
@@ -226,7 +251,6 @@ background-color: #f2f2f2;
 						<option value="64">Yên Bái</option>
 					</select>
 				</div>
-
 			</div>
 			<div class="col-sm-1">
 				<a href="#" role="button" class="btn btn-primary active navb-right"><span
@@ -259,164 +283,68 @@ background-color: #f2f2f2;
 		</div>
 		<div class="row">
 			<h3 align="left">
-				<span class="glyphicon glyphicon-briefcase"></span> Đăng tin <span
-					class="Success Label"></span>
+				<span class="glyphicon glyphicon-briefcase"></span> Kết quả tìm kiếm
+				<span class="Success Label"></span>
 			</h3>
-			<br>
-		</div>
-
-		<div class="row">
-			<div class="col-sm-3">
-				<h4>Thông tin tuyển dụng</h4>
+			<div class="col-sm-6">
+				<h4 align="center">có 120 kết quả tìm kiếm</h4>
 			</div>
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3"></div>
+			<div class="col-sm-6"></div>
 			<br>
 		</div>
 		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Vị trí tuyển dụng</h4>
+			<div class="col-sm-2">
+				<h4>Họ tên</h4>
 			</div>
-			<div class="col-sm-3">
-				<input class="form-control" placeholder="nhập vị trí tuyển dụng"
-					id="inputdefault" type="text">
+			<div class="col-sm-2">
+				<h4>Ngành nghề</h4>
 			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Yêu cầu công việc</h4>
+			<div class="col-sm-1">
+				<h4>Trình độ/kinh nghiệm</h4>
 			</div>
-			<div class="col-sm-3">
-				<textarea class="form-control" rows="5" id="comment"></textarea>
+			<div class="col-sm-2">
+				<h4>Mức lương</h4>
 			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Số lượng tuyển dụng</h4>
+			<div class="col-sm-1">
+				<h4>Giới tính</h4>
 			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<select class="form-control" id="exampleSelect2">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>...</option>
-					</select>
-				</div>
+			<div class="col-sm-2">
+				<h4>Tỉnh/Thành phố</h4>
 			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Giới tính</h4>
+			<div class="col-sm-2">
+				<h4>cập nhật</h4>
 			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<select class="form-control" id="exampleSelect2">
-						<option>Không yêu cầu</option>
-						<option>Nam</option>
-						<option>Nữ</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Tính chất công việc</h4>
-			</div>
-			<div class="col-sm-3">
-				<input class="form-control" placeholder="tính chất công việc"
-					id="inputdefault" type="text">
-			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Quyền lợi</h4>
-			</div>
-			<div class="col-sm-3">
-				<textarea class="form-control" rows="5" id="comment"></textarea>
-			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Hạn nạp</h4>
-			</div>
-			<div class="col-sm-3">
-				<p align="left">
-					<input type="text" id="dp1" class="span2 datepicker"
-						placeholder="Date..." name="date">
-				</p>
-			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3">
-				<h4>Thông tin liên hệ</h4>
-			</div>
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Người liên hệ</h4>
-			</div>
-			<div class="col-sm-3">
-				<input class="form-control" placeholder="Người liên hệ"
-					id="inputdefault" type="text">
-			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Địa chỉ</h4>
-			</div>
-			<div class="col-sm-3">
-				<input class="form-control" placeholder="nhập Địa chỉ"
-					id="inputdefault" type="text">
-			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Số điện thoại</h4>
-			</div>
-			<div class="col-sm-3">
-				<input class="form-control" placeholder="nhập số điện thoại"
-					id="inputdefault" type="text">
-			</div>
-			<div class="col-sm-3"></div>
-			<br>
+			<br> <br> <br>
 			<h3></h3>
-			<a href="#" role="button" type="submit"
-				class="btn btn-primary active navb-right">Đăng tin</a>
+		</div>
+		<div class="row">
+			<div class="pre-scrollable">
+				<% for (int i=0;i<120;i++){ %>
+				<div class="col-sm-12">
+					<div class="col-sm-2">
+						<p>Nguyen van A</p>
+					</div>
+					<div class="col-sm-2">
+						<p>IT</p>
+					</div>
+					<div class="col-sm-1">
+						<p>1 năm</p>
+					</div>
+					<div class="col-sm-2">
+						<p>7-10 triệu</p>
+					</div>
+					<div class="col-sm-1">
+						<p>Nam</p>
+					</div>
+					<div class="col-sm-2">
+						<p>DN</p>
+					</div>
+					<div class="col-sm-2">
+						<p>11/11/2016</p>
+					</div>
+				</div>
+				<% } %>
+			</div>
 		</div>
 	</div>
 	<br>
@@ -424,6 +352,7 @@ background-color: #f2f2f2;
 		<img src="images/logo.jpg" class="img-rounded" alt="Cinque Terre"
 			width="200" height="100">
 	</footer>
+
 </body>
 </html>
 

@@ -76,7 +76,6 @@ background-color: #f2f2f2;
   border-right:#f2f2f2;
   border-left:#f2f2f2;
 }
-
   </style>
 </head>
 <body>
@@ -88,9 +87,6 @@ background-color: #f2f2f2;
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-
-
-
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
@@ -125,9 +121,6 @@ background-color: #f2f2f2;
 			</div>
 		</div>
 	</nav>
-
-
-
 	<div class="container text-center">
 		<div class="container">
 			<div class="test">
@@ -151,48 +144,38 @@ background-color: #f2f2f2;
 						href="#"><span class="glyphicon glyphicon-pushpin"></span> Xem
 							các ngành nghề khác</a></li>
 				</ul>
-				
 			</div>
-			
 		</div>
-		
 		<div class="row">
 			<h3 align="left">
-				<span class="glyphicon glyphicon-briefcase"></span> Xem báo cáo <span class="Success Label"></span>
+				<span class="glyphicon glyphicon-briefcase"></span> Xem báo cáo <span
+					class="Success Label"></span>
 			</h3>
 			<br>
 		</div>
-        <div class="row">
-		
+		<div class="row">
+
 			<div class="col-sm-2"></div>
-			<div class="col-sm-2">
-				
-			</div>
+			<div class="col-sm-2"></div>
 			<div class="col-sm-2">
 				<input class="form-control" placeholder="Nhập nội dung"
 					id="inputdefault" type="text">
 			</div>
 			<div class="col-sm-2">
-			<a href="#" role="button" class="btn btn-primary active navb-right">Tìm
-					</a>
+				<a href="#" role="button" class="btn btn-primary active navb-right">Tìm
+				</a>
 			</div>
-			<div class="col-sm-2">
-			
-			</div>
-			<div class="col-sm-2">
-				
-			</div>
+			<div class="col-sm-2"></div>
+			<div class="col-sm-2"></div>
 		</div>
-		<div class="row">
-			
-		</div>
+		<div class="row"></div>
 		<div class="row">
 			<div class="col-sm-1"></div>
 			<div class="col-sm-10">
 				<table class="table table-condensed">
 					<thead>
 						<tr>
-						    <th>STT</th>
+							<th>STT</th>
 							<th>Email</th>
 							<th>Nội dung</th>
 							<th>Ngày đăng</th>
@@ -203,47 +186,41 @@ background-color: #f2f2f2;
 						<tr>
 							<td align="left">1</td>
 							<td align="left">ABC</td>
-							<td align="left">- Tư vấn, chăm sóc, giới thiệu sản phẩm cho khách hàng
-                                <br>
-                                - Sắp xếp sản phẩm, dọn vệ sinh cửa hàng
-                                <br>
-                                - Hỗ trợ công việc nhập hàng
-                                <br>
-                                - Kiểm tra và báo cáo số lượng tồn thực tế tại quầy để bổ sung hàng kịp thời
-                                 <br>
-                                - Các công việc khác do Quản lý phân công</td>
-                                <td align="left">11/11/2016</td>
-                                <th ><a href="DA_duyettin?ID=&key=0" role="button" class="btn btn-primary"> Đã xem </a></th>
+							<td align="left">- Tư vấn, chăm sóc, giới thiệu sản phẩm cho
+								khách hàng <br> - Sắp xếp sản phẩm, dọn vệ sinh cửa hàng <br>
+								- Hỗ trợ công việc nhập hàng <br> - Kiểm tra và báo cáo số
+								lượng tồn thực tế tại quầy để bổ sung hàng kịp thời <br> -
+								Các công việc khác do Quản lý phân công
+							</td>
+							<td align="left">11/11/2016</td>
+							<th><a href="DA_duyettin?ID=&key=0" role="button"
+								class="btn btn-primary"> Đã xem </a></th>
 						</tr>
 						<tr>
 							<td align="left">2</td>
 							<td align="left">ABC</td>
-							<td align="left">- Tư vấn, chăm sóc, giới thiệu sản phẩm cho khách hàng
-                                <br>
-                                - Sắp xếp sản phẩm, dọn vệ sinh cửa hàng
-                                <br>
-                                - Hỗ trợ công việc nhập hàng
-                                <br>
-                                - Kiểm tra và báo cáo số lượng tồn thực tế tại quầy để bổ sung hàng kịp thời
-                                 <br>
-                                - Các công việc khác do Quản lý phân công</td>
-                                <td align="left">11/11/2016</td>
-                                <th ><a href="DA_duyettin?ID=&key=0" role="button" class="btn btn-primary"> Đã xem </a></th>
+							<td align="left">- Tư vấn, chăm sóc, giới thiệu sản phẩm cho
+								khách hàng <br> - Sắp xếp sản phẩm, dọn vệ sinh cửa hàng <br>
+								- Hỗ trợ công việc nhập hàng <br> - Kiểm tra và báo cáo số
+								lượng tồn thực tế tại quầy để bổ sung hàng kịp thời <br> -
+								Các công việc khác do Quản lý phân công
+							</td>
+							<td align="left">11/11/2016</td>
+							<th><a href="DA_duyettin?ID=&key=0" role="button"
+								class="btn btn-primary"> Đã xem </a></th>
 						</tr>
 						<tr>
 							<td align="left">3</td>
 							<td align="left">ABC</td>
-							<td align="left">- Tư vấn, chăm sóc, giới thiệu sản phẩm cho khách hàng
-                                <br>
-                                - Sắp xếp sản phẩm, dọn vệ sinh cửa hàng
-                                <br>
-                                - Hỗ trợ công việc nhập hàng
-                                <br>
-                                - Kiểm tra và báo cáo số lượng tồn thực tế tại quầy để bổ sung hàng kịp thời
-                                 <br>
-                                - Các công việc khác do Quản lý phân công</td>
-                                <td align="left">11/11/2016</td>
-                                <th ><a href="DA_duyettin?ID=&key=0" role="button" class="btn btn-primary"> Đã xem </a></th>
+							<td align="left">- Tư vấn, chăm sóc, giới thiệu sản phẩm cho
+								khách hàng <br> - Sắp xếp sản phẩm, dọn vệ sinh cửa hàng <br>
+								- Hỗ trợ công việc nhập hàng <br> - Kiểm tra và báo cáo số
+								lượng tồn thực tế tại quầy để bổ sung hàng kịp thời <br> -
+								Các công việc khác do Quản lý phân công
+							</td>
+							<td align="left">11/11/2016</td>
+							<th><a href="DA_duyettin?ID=&key=0" role="button"
+								class="btn btn-primary"> Đã xem </a></th>
 						</tr>
 					</tbody>
 				</table>
@@ -251,7 +228,6 @@ background-color: #f2f2f2;
 			<div class="col-sm-1"></div>
 			<br>
 		</div>
-		
 	</div>
 	<br>
 
@@ -259,7 +235,6 @@ background-color: #f2f2f2;
 		<img src="images/logo.jpg" class="img-rounded" alt="Cinque Terre"
 			width="200" height="100">
 	</footer>
-
 </body>
 </html>
 
