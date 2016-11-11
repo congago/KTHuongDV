@@ -6,9 +6,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/datepicker.css">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
- 
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+  $(function(){
+	   $('.datepicker').datepicker({
+	      format: 'mm-dd-yyyy'
+	    });
+	});
+        </script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
@@ -263,15 +271,14 @@ background-color: #f2f2f2;
 
 		<div class="row">
 			<h3 align="left">
-				<span class="glyphicon glyphicon-briefcase"></span> Người tìm việc
-				đăng ký thành viên <span class="Success Label"></span>
+				<span class="glyphicon glyphicon-briefcase"></span> Đăng tin <span class="Success Label"></span>
 			</h3>
 			<br>
 		</div>
 
 		<div class="row">
 			<div class="col-sm-3">
-				<h4>Thông tin đăng nhập</h4>
+				<h4>Thông tin tuyển dụng</h4>
 			</div>
 			<div class="col-sm-3"></div>
 			<div class="col-sm-3"></div>
@@ -281,10 +288,10 @@ background-color: #f2f2f2;
 		<div class="row">
 			<div class="col-sm-3"></div>
 			<div class="col-sm-3">
-				<h4 align="left">Email</h4>
+				<h4 align="left">Vị  trí tuyển dụng</h4>
 			</div>
 			<div class="col-sm-3">
-				<input class="form-control" placeholder="Email" id="inputdefault"
+				<input class="form-control" placeholder="nhập vị trí tuyển dụng" id="inputdefault"
 					type="text">
 			</div>
 			<div class="col-sm-3"></div>
@@ -293,11 +300,10 @@ background-color: #f2f2f2;
 		<div class="row">
 			<div class="col-sm-3"></div>
 			<div class="col-sm-3">
-				<h4 align="left">Mật khẩu</h4>
+				<h4 align="left">Yêu cầu công việc</h4>
 			</div>
 			<div class="col-sm-3">
-				<input class="form-control" placeholder="nhập password"
-					id="inputdefault" type="password">
+				 <textarea class="form-control" rows="5" id="comment"></textarea>
 			</div>
 			<div class="col-sm-3"></div>
 			<br>
@@ -305,32 +311,93 @@ background-color: #f2f2f2;
 		<div class="row">
 			<div class="col-sm-3"></div>
 			<div class="col-sm-3">
-				<h4 align="left">Nhập lại mật khẩu</h4>
+				<h4 align="left">Số lượng tuyển dụng</h4>
 			</div>
 			<div class="col-sm-3">
-				<input class="form-control" placeholder="nhập lại password"
-					id="inputdefault" type="password">
+				<div class="form-group">
+					<select class="form-control" id="exampleSelect2">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>...</option>
+					</select>
+				</div>
 			</div>
 			<div class="col-sm-3"></div>
 			<br>
-			<h3></h3>
+			
 		</div>
 		<div class="row">
+			<div class="col-sm-3"></div>
 			<div class="col-sm-3">
-				<h4>Thông tin cá nhân</h4>
+				<h4 align="left">Giới tính</h4>
 			</div>
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<div class="form-group">
+					<select class="form-control" id="exampleSelect2">
+						<option>Không yêu cầu</option>
+						<option>Nam</option>
+						<option>Nữ</option>
+					</select>
+				</div>
+			</div>
 			<div class="col-sm-3"></div>
 			<br>
 		</div>
 		<div class="row">
 			<div class="col-sm-3"></div>
 			<div class="col-sm-3">
-				<h4 align="left">Họ tên</h4>
+				<h4 align="left">Tính chất công việc</h4>
 			</div>
 			<div class="col-sm-3">
-				<input class="form-control" placeholder="nhập có dấu"
+				 <input class="form-control" placeholder="tính chất công việc" id="inputdefault"
+					type="text">
+			</div>
+			<div class="col-sm-3"></div>
+			<br>
+		</div>
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<h4 align="left">Quyền lợi</h4>
+			</div>
+			<div class="col-sm-3">
+				 <textarea class="form-control" rows="5" id="comment"></textarea>
+			</div>
+			<div class="col-sm-3"></div>
+			<br>
+		</div>
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<h4 align="left">Hạn nạp</h4>
+			</div>
+			<div class="col-sm-3">
+				 <p align="left"><input type="text" id="dp1" class="span2 datepicker"
+										placeholder="Date..." name="date"></p>
+			</div>
+			<div class="col-sm-3"></div>
+			<br>
+			
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-3">
+				<h4>Thông tin liên hệ</h4>
+			</div>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3"></div>
+			<br>
+		</div>
+			<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<h4 align="left">Người liên hệ</h4>
+			</div>
+			<div class="col-sm-3">
+				<input class="form-control" placeholder="Người liên hệ"
 					id="inputdefault" type="text">
 			</div>
 			<div class="col-sm-3"></div>
@@ -340,7 +407,20 @@ background-color: #f2f2f2;
 		<div class="row">
 			<div class="col-sm-3"></div>
 			<div class="col-sm-3">
-				<h4 align="left">Di động</h4>
+				<h4 align="left">Địa chỉ</h4>
+			</div>
+			<div class="col-sm-3">
+				<input class="form-control" placeholder="nhập Địa chỉ"
+					id="inputdefault" type="text">
+			</div>
+			<div class="col-sm-3"></div>
+			<br>
+
+		</div>
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<h4 align="left">Số điện thoại</h4>
 			</div>
 			<div class="col-sm-3">
 				<input class="form-control" placeholder="nhập số điện thoại"
@@ -350,7 +430,7 @@ background-color: #f2f2f2;
 			<br>
 			<h3></h3>
 			<a href="#" role="button" type="submit"
-				class="btn btn-primary active navb-right">Đăng ký</a>
+				class="btn btn-primary active navb-right">Đăng tin</a>
 		</div>
 
 	</div>
