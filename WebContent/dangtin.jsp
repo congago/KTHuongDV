@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Home</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/datepicker.css">
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/datepicker.css">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
@@ -17,75 +17,81 @@
 	    });
 	});
         </script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 10;
-    }
-  /* .navbar-nav{
+<style>
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+	margin-bottom: 0;
+	border-radius: 10;
+}
+/* .navbar-nav{
       background-color: #333;
 } -->
     /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    
-  .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-      min-height:200px;
-  }
-
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none;
-    }
-  }
-  .tales {
-  width: 100%;
-}
-.carousel-inner{
-  width:100%;
-  max-height: 400px !important;
-}
-.container text-center { background-color: #FF4455; }
-.container text-center:hover { background-color: #000000; }
-.carousel slide { 
-   position: relative; 
-   width: 100%; /* for IE 6 */
+footer {
+	background-color: #f2f2f2;
+	padding: 25px;
 }
 
-.collapse navbar-collapse{
-background-color: #001155;
-border-radius: 10;
+.carousel-inner img {
+	width: 100%; /* Set width to 100% */
+	margin: auto;
+	min-height: 200px;
 }
 
-.onimages { 
-
-   position: relative; 
-   margin: 5px;
-   padding: 15px;
-   left: 0; 
-   width: 100%;
-    
-}
-.row{
-background-color: #f2f2f2;
-
-}
-.row h3	{
-
- border-style:solid	;
- border-bottom-color:#b3b3ff;
- border-top-color:#f2f2f2;
-  border-right:#f2f2f2;
-  border-left:#f2f2f2;
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media ( max-width : 600px) {
+	.carousel-caption {
+		display: none;
+	}
 }
 
-  </style>
+.tales {
+	width: 100%;
+}
+
+.carousel-inner {
+	width: 100%;
+	max-height: 400px !important;
+}
+
+.container text-center {
+	background-color: #FF4455;
+}
+
+.container text-center:hover {
+	background-color: #000000;
+}
+
+.carousel slide {
+	position: relative;
+	width: 100%; /* for IE 6 */
+}
+
+.collapse navbar-collapse {
+	background-color: #001155;
+	border-radius: 10;
+}
+
+.onimages {
+	position: relative;
+	margin: 5px;
+	padding: 15px;
+	left: 0;
+	width: 100%;
+}
+
+.row {
+	background-color: #f2f2f2;
+}
+
+.row h3 {
+	border-style: solid;
+	border-bottom-color: #b3b3ff;
+	border-top-color: #f2f2f2;
+	border-right: #f2f2f2;
+	border-left: #f2f2f2;
+}
+</style>
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -264,7 +270,7 @@ background-color: #f2f2f2;
 			</h3>
 			<br>
 		</div>
-
+       <form action="" method="post">
 		<div class="row">
 			<div class="col-sm-3">
 				<h4>Thông tin tuyển dụng</h4>
@@ -297,58 +303,11 @@ background-color: #f2f2f2;
 			<div class="col-sm-3"></div>
 			<br>
 		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Số lượng tuyển dụng</h4>
-			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<select class="form-control" id="exampleSelect2">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>...</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Giới tính</h4>
-			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<select class="form-control" id="exampleSelect2">
-						<option>Không yêu cầu</option>
-						<option>Nam</option>
-						<option>Nữ</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
+
 		<div class="row">
 			<div class="col-sm-3"></div>
 			<div class="col-sm-3">
 				<h4 align="left">Tính chất công việc</h4>
-			</div>
-			<div class="col-sm-3">
-				<input class="form-control" placeholder="tính chất công việc"
-					id="inputdefault" type="text">
-			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Quyền lợi</h4>
 			</div>
 			<div class="col-sm-3">
 				<textarea class="form-control" rows="5" id="comment"></textarea>
@@ -371,53 +330,16 @@ background-color: #f2f2f2;
 			<br>
 		</div>
 		<div class="row">
-			<div class="col-sm-3">
-				<h4>Thông tin liên hệ</h4>
-			</div>
 			<div class="col-sm-3"></div>
 			<div class="col-sm-3"></div>
 			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Người liên hệ</h4>
-			</div>
-			<div class="col-sm-3">
-				<input class="form-control" placeholder="Người liên hệ"
-					id="inputdefault" type="text">
-			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Địa chỉ</h4>
-			</div>
-			<div class="col-sm-3">
-				<input class="form-control" placeholder="nhập Địa chỉ"
-					id="inputdefault" type="text">
-			</div>
-			<div class="col-sm-3"></div>
-			<br>
-		</div>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-3">
-				<h4 align="left">Số điện thoại</h4>
-			</div>
-			<div class="col-sm-3">
-				<input class="form-control" placeholder="nhập số điện thoại"
-					id="inputdefault" type="text">
-			</div>
 			<div class="col-sm-3"></div>
 			<br>
 			<h3></h3>
 			<a href="#" role="button" type="submit"
 				class="btn btn-primary active navb-right">Đăng tin</a>
 		</div>
+		</form>
 	</div>
 	<br>
 	<footer class="container-fluid text-center">

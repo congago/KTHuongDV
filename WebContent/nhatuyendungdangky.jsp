@@ -249,7 +249,7 @@ background-color: #f2f2f2;
     </div>
     
       <div class="row">
-  <h3 align="left"><span class="glyphicon glyphicon-briefcase"></span>  Người tìm việc đăng ký thành viên <span class = "Success Label"></span></h3>
+  <h3 align="left"><span class="glyphicon glyphicon-briefcase"></span>  Nhà tuyển dụng đăng ký <span class = "Success Label"></span></h3>
     <br>
      </div>
      
